@@ -7,7 +7,7 @@ obsidianmd-powershell is a basic and unofficial PowerShell module desinged to al
 ## Installation
 To install this module, use the below command to download the repository or if you prefer, use Git to clone the repository.
 ```PowerShell
-Invoke-WebRequest -Uri "" -OutFile "$($env:userprofile\Downloads\obsidianmd-powershell.zip"
+Invoke-WebRequest -Uri "" -OutFile "$($env:userprofile\Downloads\obsidianmd-powershell.zip)"
 ```
 
 Once you've obtained the module, install the module and import it:
