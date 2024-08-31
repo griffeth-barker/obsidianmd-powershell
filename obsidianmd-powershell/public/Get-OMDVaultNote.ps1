@@ -27,7 +27,7 @@ function Get-OMDVaultNote {
     [void]$ResultsDatatable.Columns.Add("Title", [String])
     [void]$ResultsDatatable.Columns.Add("Path", [String])
 
-    $Results = Get-ChildItem -Path $env:OMDVaultPath -Recurse -File | Where-Object { $_.Name -like "*$SearchTerm*" -or $_.FullName -like "*$SearchTerm*" }
+    $Results = Get-ChildItem -Path $env:OMDVaultPath -Recurse -File | Where-Object { $_.Name -like "*$SearchTerm*" -or $_.FullName -like "*$SearchTerm*" -and $_.Extension -eq ".md" }
     
     foreach ($Result in $Results) {
       $Index++
