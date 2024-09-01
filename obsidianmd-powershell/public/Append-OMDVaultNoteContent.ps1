@@ -60,4 +60,4 @@ function Append-OMDVaultNoteContent {
 
 }
 
-Export-ModuleMember -Function Append-OMDVaultNoteContent
+Export-ModuleMember -Function 'Append-OMDVaultNoteContent'
