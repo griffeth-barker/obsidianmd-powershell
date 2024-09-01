@@ -9,7 +9,7 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = '.\obsidianmd-powershell\obsidianmd-powershell.psm1'
+RootModule = '.\obsidianmd-powershell.psm1'
 
 # Version number of this module.
 ModuleVersion = '0.1.0'
@@ -24,13 +24,13 @@ GUID = '559e8c61-ef64-43c6-bb02-020ceb7c7bc6'
 Author = 'Griffeth Barker'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'None'
 
 # Copyright statement for this module
 Copyright = 'GPL-3.0'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'A basic and unofficial PowerShell module for interacting with your Obsidian notes.'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''
