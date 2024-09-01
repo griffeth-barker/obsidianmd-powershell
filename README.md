@@ -10,4 +10,4 @@ Obsidian prides itself on you maintaining ownership of your vault's contents, an
 This module will be available on the PowerShell Gallery at its first release. Until then, you can download the `.zip` archive of the module from GitHub and manually import it into your PowerShell session.
 
 ## Getting Started
-To get started with obsidianmd-powershell, head over to the docs (coming soon).
+To get started with obsidianmd-powershell, head over to the [wiki](https://github.com/griffeth-barker/obsidianmd-powershell/wiki/Getting-Started).
