@@ -36,4 +36,4 @@ function Remove-OMDVaultPath {
   }
 }
 
-# Export-ModuleMember -Function Remove-OMDVaultPath
+Export-ModuleMember -Function Remove-OMDVaultPath

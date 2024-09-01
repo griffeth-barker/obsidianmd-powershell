@@ -21,4 +21,4 @@ function Get-OMDVaultPath {
   }
 }
 
-# Export-ModuleMember -Function Get-OMDVaultPath
+Export-ModuleMember -Function Get-OMDVaultPath

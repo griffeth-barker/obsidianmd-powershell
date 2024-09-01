@@ -71,4 +71,4 @@ function Remove-OMDVaultNote {
   }
 }
 
-# Export-ModuleMember -Function Remove-OMDVaultNote
+Export-ModuleMember -Function Remove-OMDVaultNote

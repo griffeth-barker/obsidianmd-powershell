@@ -43,4 +43,4 @@ function Get-OMDVaultNote {
   }
 }
 
-# Export-ModuleMember -Function Get-OMDVaultNote
+Export-ModuleMember -Function Get-OMDVaultNote

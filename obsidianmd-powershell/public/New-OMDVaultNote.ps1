@@ -67,4 +67,4 @@ function New-OMDVaultNote {
   }
 }
 
-# Export-ModuleMember -Function New-OMDVaultNote
+Export-ModuleMember -Function New-OMDVaultNote

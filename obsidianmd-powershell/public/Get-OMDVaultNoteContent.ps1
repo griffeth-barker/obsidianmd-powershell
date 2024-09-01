@@ -11,7 +11,7 @@
  .Parameter RelativePath
   A string containing the relative path to the directory in your vault containing the note of which you'd like to get the content.
 
- .Parameter Name
+ .Parameter FullPath
   A string containing the full path to the directory containing the note of which you'd like to get the content.
 
  .Example
@@ -86,4 +86,4 @@ function Get-OMDVaultNoteContent {
 
 }
 
-# Export-ModuleMember -Function Remove-OMDVaultNote
+Export-ModuleMember -Function Remove-OMDVaultNote

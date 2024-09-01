@@ -72,4 +72,4 @@ function Set-OMDVaultPath {
   }
 }
 
-# Export-ModuleMember -Function Set-OMDVaultPath
+Export-ModuleMember -Function Set-OMDVaultPath
