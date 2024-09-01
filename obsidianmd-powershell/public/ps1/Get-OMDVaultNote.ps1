@@ -42,5 +42,3 @@ function Get-OMDVaultNote {
     Write-Error $_.Exception.Message
   }
 }
-
-Export-ModuleMember -Function 'Get-OMDVaultNote'

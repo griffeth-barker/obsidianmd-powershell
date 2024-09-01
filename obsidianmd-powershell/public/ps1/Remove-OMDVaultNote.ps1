@@ -70,5 +70,3 @@ function Remove-OMDVaultNote {
     Write-Error $_.Exception.Message
   }
 }
-
-Export-ModuleMember -Function 'Remove-OMDVaultNote'

@@ -66,5 +66,3 @@ function New-OMDVaultNote {
     Write-Error $_.Exception.Message
   }
 }
-
-Export-ModuleMember -Function 'New-OMDVaultNote'

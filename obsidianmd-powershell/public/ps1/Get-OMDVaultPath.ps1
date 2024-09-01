@@ -20,5 +20,3 @@ function Get-OMDVaultPath {
     Write-Error 'The $env:OMDVaultPath variable is not set. You can set it using Set-OMDVaultPath.'
   }
 }
-
-Export-ModuleMember -Function 'Get-OMDVaultPath'

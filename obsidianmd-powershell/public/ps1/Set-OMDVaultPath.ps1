@@ -71,5 +71,3 @@ function Set-OMDVaultPath {
     Write-Error $_.Exception.Message
   }
 }
-
-Export-ModuleMember -Function 'Set-OMDVaultPath'

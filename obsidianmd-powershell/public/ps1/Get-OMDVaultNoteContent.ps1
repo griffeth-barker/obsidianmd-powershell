@@ -85,5 +85,3 @@ function Get-OMDVaultNoteContent {
   }
 
 }
-
-Export-ModuleMember -Function 'Remove-OMDVaultNote'

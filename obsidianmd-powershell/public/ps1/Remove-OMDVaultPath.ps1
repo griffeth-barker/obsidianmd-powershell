@@ -35,5 +35,3 @@ function Remove-OMDVaultPath {
     Write-Error $_.Exception.Message
   }
 }
-
-Export-ModuleMember -Function 'Remove-OMDVaultPath'
