@@ -56,7 +56,8 @@ function Set-OMDVaultPath {
     if ((Get-Content -Path $profile | Select-String -Simple '$env:OMDVaultPath').Count -eq 0) {
       # Set the OMDVaultPath environment variable
       $Variable = '$env:OMDVaultPath'
-      Add-Content -Path "$($profile)" -Value ("$Variable" + "=" + "'" + $Path + "'") -Force
+      Add-Content -Path "$($Profile)" -Value "`n" -Force
+      Add-Content -Path "$($Profile)" -Value ("$Variable" + "=" + "'" + $Path + "'") -Force
 
       # Reload the current user's PowerShell profile if specified
       if ($Reload) {
