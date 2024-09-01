@@ -6,7 +6,9 @@
  Searches your Obsidian vault for notes matching your specified search criteria.
 
  .Parameter SearchTerm
- ##TODO: Add help for -SearchTerm
+ A string containing your search term. This is not case sensitive. The search will be performed by enumerating the contents
+ of your Obsidian vault and searching for the specified term in the file name or full path name; this will behave as if you
+ hade a * wildcard on either side of your search term.
 
  .Example
   Get-OMDVaultNote -SearchTerm 'Linux'
