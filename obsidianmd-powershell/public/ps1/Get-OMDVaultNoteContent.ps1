@@ -8,6 +8,9 @@
  .Parameter Name
   A string containing the name of the note of which you'd like to get the content.
 
+ .Parameter Index
+  An integer containing the index of the note of note of which you'd like to get the content, piped in from the output of Get-OMDVaultNote.
+
  .Parameter RelativePath
   A string containing the relative path to the directory in your vault containing the note of which you'd like to get the content.
 
@@ -33,8 +36,10 @@
 function Get-OMDVaultNoteContent {
   [CmdletBinding()]
   param (
-    [Parameter(Mandatory = $true)]
+    [Parameter(Mandatory = $false)]
     [string]$Name,
+    [Parameter(Mandatory = $false)]
+    [Int32]$Index,
     [Parameter(Mandatory = $false)]
     [string]$RelativePath,
     [Parameter(Mandatory = $false)]
@@ -49,7 +54,10 @@ function Get-OMDVaultNoteContent {
       $Name = $Name.TrimEnd(".md")
     }
 
-    # Create new note using relative path if specified
+    # Get note content
+    if ($Index) { ## TODO: Figure out how we want to handle piping output from Get-OMDVaultNote into this function.
+      Show-Markdown -Path 
+    }
     if ($RelativePath) {
       # Sanitize the RelativePath string
       if ($RelativePath -like "*\") {
