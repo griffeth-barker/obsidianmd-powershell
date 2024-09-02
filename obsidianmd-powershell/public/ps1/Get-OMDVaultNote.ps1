@@ -27,7 +27,7 @@ function Get-OMDVaultNote {
     $ResultsDatatable = New-Object System.Data.DataTable
     [void]$ResultsDatatable.Columns.Add("Index", [Int32])
     [void]$ResultsDatatable.Columns.Add("Title", [String])
-    [void]$ResultsDatatable.Columns.Add("Path", [String])
+    [void]$ResultsDatatable.Columns.Add("Path", [String]) ## TODO: Change this to relative path instead of full path.
 
     $Results = Get-ChildItem -Path $env:OMDVaultPath -Recurse -File | Where-Object { $_.Name -like "*$SearchTerm*" -or $_.FullName -like "*$SearchTerm*" -and $_.Extension -eq ".md" }
     
@@ -36,7 +36,7 @@ function Get-OMDVaultNote {
       [void]$ResultsDatatable.Rows.Add($Index, $Result.Name, $Result.FullName)
     }
 
-    return $ResultsDatatable
+    return [PSCustomObject]$ResultsDatatable
   }
   catch {
     Write-Error $_.Exception.Message
