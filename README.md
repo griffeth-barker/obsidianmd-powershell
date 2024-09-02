@@ -11,3 +11,6 @@ This module will be available on the PowerShell Gallery at its first release. Un
 
 ## Getting Started
 To get started with obsidianmd-powershell, head over to the [wiki](https://github.com/griffeth-barker/obsidianmd-powershell/wiki/Getting-Started).
+
+## Contributing
+This is a small side project of mine. If you'd like to contribute, you are most welcome! Pull requests welcome.
